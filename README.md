@@ -31,6 +31,7 @@ There were several interesting parts of this that I wanted to touch on
 
 1. clone the repo
 2. change directory to local repo
-3. create the database
-4. migrate database
-5. run rails c to bring up database in terminal
+3. bundle install to get all gems
+4. create the database
+5. migrate database
+6. run rails c to bring up database in terminal
