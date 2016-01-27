@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160127185001) do
+ActiveRecord::Schema.define(version: 20160127212748) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,8 +59,10 @@ ActiveRecord::Schema.define(version: 20160127185001) do
     t.integer  "user_id"
     t.string   "location"
     t.date     "event_date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "brand_id"
+    t.integer  "retailer_id"
   end
 
   create_table "photos", force: :cascade do |t|
@@ -99,18 +101,18 @@ ActiveRecord::Schema.define(version: 20160127185001) do
     t.datetime "updated_at",  null: false
   end
 
+  create_table "taster_assessments", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "assessment_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
   create_table "tasters", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "real_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "user_assessments", force: :cascade do |t|
-    t.integer  "user_id"
-    t.integer  "assessment_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
   end
 
   create_table "users", force: :cascade do |t|
