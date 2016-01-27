@@ -1,5 +1,5 @@
 class Retailer < ActiveRecord::Base
-	has_one :user
+	has_one :user, as: :usable 
 	has_many :events
 	has_many :sales, through: :events
 

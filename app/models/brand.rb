@@ -1,6 +1,5 @@
 class Brand < ActiveRecord::Base
-
-	has_one :user
+	has_one :user, as: :usable
 	has_many :beverages
 	has_many :events
 
@@ -8,5 +7,4 @@ class Brand < ActiveRecord::Base
 	validates :contact_email, presence: true
 	validates :brand_name, presence: true
 	validates :brand_name, uniqueness: true
-
 end
