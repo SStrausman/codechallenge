@@ -25,4 +25,12 @@ There were several interesting parts of this that I wanted to touch on
 
 10. Changed the user_assessments to be taster_assessment and belong to taster for the same reasoning.
 
-11.For the user model, I would normally implement something like bcrypt or devise on the password and not store the password in the database, but given that this is a test app that will never be deployed with users I made the choice to focus on the other parts of the challenge and not spend time setting this up.
+11. For the user model, I would normally implement something like bcrypt or devise on the password and not store the password in the database, but given that this is a test app that will never be deployed with users I made the choice to focus on the other parts of the challenge and not spend time setting this up.
+
+### Run The App
+
+1. clone the repo
+2. change directory to local repo
+3. create the database
+4. migrate database
+5. run rails c to bring up database in terminal
