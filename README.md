@@ -1,7 +1,7 @@
 # code challenge
 
 ### ERD
-[ERD can be found here]([http://imgur.com/atV8FIb)
+[ERD can be found here](http://imgur.com/atV8FIb)
 
 There were several interesting parts of this that I wanted to touch on
 1. I know the instructions said no fields needed to be added, but I added the foreign keys to demonstrate a little bit about how the relationships would work. I would not name my keys in the way the sql tool I used did (prefering something like user_id to the ID_users) that they ended up generating, but I just left it up to show what I was thinking with those relationships.
