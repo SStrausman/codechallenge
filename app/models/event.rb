@@ -6,5 +6,5 @@ class Event < ActiveRecord::Base
 	has_one :retailer
 
 	validates :location, presence: true
-	validates :event_date, presence:  true
+	validates :event_date, presence: true
 end
