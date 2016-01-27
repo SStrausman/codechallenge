@@ -13,3 +13,4 @@ There were several interesting parts of this that I wanted to touch on
 7) Similarly, I realized that sales should also belong to a beverage as well. That is reflected in the code but not in the ERD for the same reason.
 8) When doing the associations for events, I noticed that the design of the ERD does not fulfil the purposes of the different users really well. Therefore, I decided to link directly to a brand and to a retailer in the event. It is my assumption that an event has only one retailer and one brand. This approach would not scale to multiple different brands per an event without some kind of join table.
 9) Decided to change attendences to be associated with the tasters as opposed to with the users to be more consistent with how I'm using the rest of the user types.
+10) Changed the user_assessments to be taster_assessment and belong to taster for the same reasoning.
