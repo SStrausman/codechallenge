@@ -1,8 +1,8 @@
 class Brand < ActiveRecord::Base
-	
+
 	has_one :user
 	has_many :beverages
-	has_many :events, through: :users
+	has_many :events
 
 	validates :point_of_contact, presence: true 
 	validates :contact_email, presence: true
