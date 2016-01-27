@@ -1,4 +1,4 @@
-class Brand < ActiveRecord::Base
+cclass Brand < ActiveRecord::Base
 	has_one :user, as: :usable
 	has_many :beverages
 	has_many :events
