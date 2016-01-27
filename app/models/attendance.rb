@@ -1,4 +1,4 @@
-tclass Attendance < ActiveRecord::Base
+class Attendance < ActiveRecord::Base
 	belongs_to :taster
 	belongs_to :event
 end
