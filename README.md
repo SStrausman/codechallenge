@@ -35,3 +35,8 @@ There were several interesting parts of this that I wanted to touch on
 4. create the database
 5. migrate database
 6. run rails c to bring up database in terminal
+
+### Run The Tests
+1. change directory to the directory of the app
+2. type 'rspec'
+3. to run specific tests, instead type 'rspec name_of_file.rb'
