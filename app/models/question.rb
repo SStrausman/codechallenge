@@ -1,4 +1,4 @@
-aclass Question < ActiveRecord::Base
+class Question < ActiveRecord::Base
 	belongs_to :assessment
 
 	validates :prompt, presence: true
