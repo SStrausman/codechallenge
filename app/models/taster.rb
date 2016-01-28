@@ -7,4 +7,3 @@ class Taster < ActiveRecord::Base
 
 	validates :real_name, presence: true
 end
-t

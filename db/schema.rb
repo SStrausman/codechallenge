@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160127212748) do
+ActiveRecord::Schema.define(version: 20160128001023) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20160127212748) do
   end
 
   create_table "attendances", force: :cascade do |t|
-    t.integer  "user_id"
+    t.integer  "taster_id"
     t.integer  "event_id"
     t.boolean  "check_in",   default: false
     t.boolean  "check_out",  default: false
@@ -102,7 +102,7 @@ ActiveRecord::Schema.define(version: 20160127212748) do
   end
 
   create_table "taster_assessments", force: :cascade do |t|
-    t.integer  "user_id"
+    t.integer  "taster_id"
     t.integer  "assessment_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
@@ -118,9 +118,10 @@ ActiveRecord::Schema.define(version: 20160127212748) do
   create_table "users", force: :cascade do |t|
     t.string   "username"
     t.string   "password"
-    t.string   "user_type"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "usable_id"
+    t.string   "usable_type"
   end
 
 end
